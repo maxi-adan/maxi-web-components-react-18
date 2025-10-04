@@ -1,0 +1,367 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.App-header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  color: #61dafb;
+}
+
+.App-header p {
+  margin: 0 0 2rem 0;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.card {
+  padding: 2em;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.card button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-right: 1rem;
+}
+
+.card button:hover {
+  border-color: #646cff;
+}
+
+.card button:focus,
+.card button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card p {
+  margin: 1rem 0 0 0;
+  opacity: 0.8;
+}
+
+.read-the-docs {
+  color: #888;
+  margin-top: 2rem;
+}
+
+code {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+} */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+/* Estilos para el encabezado */
+.app-header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.header-text p {
+  margin: 5px 0 0 0;
+  font-size: 1.1rem;
+  color: #e3f2fd;
+  font-weight: 300;
+}
+
+.react-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.react-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.react-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.react-version {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #61dafb;
+  line-height: 1;
+}
+
+.compatibility-text {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #90caf9;
+  line-height: 1;
+}
+
+.header-description {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+.header-description p {
+  margin: 0;
+  font-size: 1rem;
+  color: #e3f2fd;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.app main {
+  flex: 1;
+}
+
+/* Estilos para las secciones de componentes */
+.component-section {
+  margin: 0 20px 40px 20px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #007bff;
+}
+
+.component-section h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+.component-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.component-item {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  padding: 16px;
+  border: 1px solid #e9ecef;
+  transition: box-shadow 0.2s ease;
+}
+
+.component-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.component-item h3 {
+  margin: 0 0 8px 0;
+  color: #495057;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 8px;
+}
+
+.component-description {
+  margin: 0 0 12px 0;
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.section-description {
+  margin: 0 0 20px 0;
+  color: #495057;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Estilos especiales para la sección de tabla */
+.table-section {
+  border-left-color: #28a745;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos especiales para la sección de paginator */
+.paginator-section {
+  border-left-color: #ffc107;
+}
+
+.paginator-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para la organización de botones */
+.button-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button-group h4 {
+  margin: 0;
+  color: #495057;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 6px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Estilos para el skeleton */
+.skeleton-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .component-group {
+    grid-template-columns: 1fr;
+  }
+  
+  .app {
+    padding: 10px;
+  }
+  
+  .component-section {
+    margin: 0 10px 40px 10px;
+    padding: 16px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .logo-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .header-text h1 {
+    font-size: 2rem;
+  }
+  
+  .app-header {
+    padding: 20px 15px;
+  }
+}
