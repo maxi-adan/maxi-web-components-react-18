@@ -1,219 +1,274 @@
-# Maxi Web Components - React 18
+# Maxi Web Components - React 17
 
-![Maxi Web Components Logo](src/assets/logo.png)
+<div align="center">
+  <img src="./src/assets/logo.png" alt="Maxi Web Components Logo" width="300" />
+</div>
 
-A comprehensive web components library for React 18, designed to provide a modern and efficient development experience.
+A comprehensive library of modern web components built with React 17, designed to provide a consistent and efficient development experience.
 
-## 📋 Description
+## 📋 Table of Contents
 
-This project is a demonstration application that showcases all available components in the `maxi-react-components` library. The application is built with React 18, TypeScript, and Vite, providing an interactive interface to explore and test each component.
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Available Components](#available-components)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
+- [Technologies Used](#technologies-used)
+- [Development](#development)
+- [Build](#build)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 🚀 Features
+## 🎯 Description
 
-- **React 18 Compatible**: Fully compatible with React 17 and 18
-- **TypeScript**: Built with TypeScript for better development experience
-- **Vite**: Fast development setup with Vite
-- **Complete Components**: More than 20 different components organized by categories
-- **Responsive Design**: Adaptive interface for different screen sizes
-- **Interactive Demo**: Each component can be tested directly in the interface
+Maxi Web Components is a React component library that offers a wide range of modern and reusable user interface elements. It's built specifically for React 17 and 18, providing complete compatibility with the latest React features.
 
-## 🛠️ Technologies Used
+### Key Features
 
-- **React 18.2.0** - Main UI library
-- **TypeScript 5.2.2** - Static typing
-- **Vite 5.0.8** - Build tool and development server
-- **maxi-react-components 4.0.10** - Components library
-- **ESLint** - Code linting
-- **CSS3** - Custom styles
+- ✅ **Compatible with React 17 and 18**
+- 🎨 **Modern and consistent design**
+- 📱 **Fully responsive**
+- 🚀 **Easy to use and integrate**
+- 🔧 **Highly customizable**
+- 📦 **Modular components**
+- 🎯 **TypeScript ready**
+- 🧪 **Testing included**
 
-## 📦 Installation
+## 🚀 Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
-   cd maxi-web-components-test/react/18
-   ```
+### Prerequisites
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+- Node.js (version 14 or higher)
+- npm or yarn
 
-3. **Run in development mode**:
-   ```bash
-   npm run dev
-   ```
+### Install Dependencies
 
-4. **Open in browser**:
-   The application will automatically open at `http://localhost:3000`
+```bash
+npm install
+```
 
-## 🎯 Available Scripts
+## 💻 Usage
 
-- `npm run dev` - Start development server
-- `npm run build` - Build application for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint linter
+### Development
+
+To run the project in development mode:
+
+```bash
+npm run dev
+```
+
+This will start the development server at `http://localhost:3000` and automatically open the browser.
+
+### Development without auto-open
+
+```bash
+npm start
+```
+
+### Production Build
+
+```bash
+npm run build
+```
+
+The built files will be generated in the `dist/` folder.
 
 ## 🧩 Available Components
 
 ### Input Components
-- **InputField** - Text input with validation and styling options
-- **InputNumber** - Numeric input with increment/decrement controls
-- **InputSwitch** - Toggle switch for boolean values
-- **InputRadio** - Radio button for single selection
-- **Checkbox** - Checkbox for multiple selections
-- **Autocomplete** - Input with suggestions and filtering
-- **Dropdown** - Select dropdown with search functionality
-- **MultiSelect** - Multiple selection dropdown with tags
-- **Calendar** - Date picker with calendar interface
+- **InputField**: Text input with validation and styling options
+- **InputNumber**: Numeric input with increment/decrement controls
+- **InputSwitch**: Toggle switch for boolean values
+- **InputRadio**: Radio button for single selection
+- **Checkbox**: Checkbox for multiple selections
+- **Autocomplete**: Input with suggestions and filtering
+- **Dropdown**: Select dropdown with search functionality
+- **MultiSelect**: Multiple selection dropdown with tags
+- **Calendar**: Date picker with calendar interface
 
 ### Navigation Components
-- **Tabs** - Tabbed interface for content organization
-- **Sidebar** - Collapsible navigation sidebar
+- **Tabs**: Tabbed interface for content organization
+- **Sidebar**: Collapsible navigation sidebar
+- **CascadeMenu**: Hierarchical dropdown menu with nested navigation options
 
 ### Action Components
-- **Button** - Interactive buttons with multiple variants and icons
-- **Chips** - Small tags for labeling and selections
+- **Button**: Interactive buttons with multiple variants and icons
+- **Chips**: Small tags for labeling and selections
 
 ### Display Components
-- **Card** - Content container with header, body, and footer
-- **Badge** - Small status indicators and labels
-- **Timeline** - Vertical timeline for events and progress
-
-### Data Components
-- **Table** - Advanced table with sorting, filtering, and pagination
-- **Paginator** - Pagination controls for data navigation
+- **Card**: Content container with header, body, and footer
+- **Badge**: Small status indicators and labels
+- **Timeline**: Vertical timeline for events and progress
+- **Table**: Advanced table with sorting, filtering, and pagination
+- **Accordion**: Collapsible content sections for organized information display
 
 ### Feedback Components
-- **Notification** - Toast notifications for user feedback
-- **Tooltip** - Hover tooltips for additional information
-- **Dialog** - Modal dialogs for forms and confirmations
+- **Notification**: Toast notifications for user feedback
+- **Tooltip**: Hover tooltips for additional information
+- **Dialog**: Modal dialogs for forms and confirmations
 
 ### State Components
-- **Preload** - Loading overlay for page transitions
-- **Skeleton** - Placeholder content while loading
-- **Spinner** - Animated loading spinner
+- **Preload**: Loading overlay for page transitions
+- **Skeleton**: Placeholder content while loading
+- **Spinner**: Animated loading spinner
 
-## 🎨 Project Structure
+### Pagination
+- **Paginator**: Pagination controls for data navigation
+
+## 📁 Project Structure
 
 ```
-src/
-├── components/
-│   └── maxi/           # Demo components
-│       ├── Autocomplete.tsx
-│       ├── Badge.tsx
-│       ├── Button.tsx
-│       ├── Calendar.tsx
-│       ├── Card.tsx
-│       ├── Checkbox.tsx
-│       ├── Chips.tsx
-│       ├── Dialog.tsx
-│       ├── Dropdown.tsx
-│       ├── InputField.tsx
-│       ├── InputNumber.tsx
-│       ├── InputRadio.tsx
-│       ├── InputSwitch.tsx
-│       ├── MultiSelect.tsx
-│       ├── Notification.tsx
-│       ├── Paginator.tsx
-│       ├── Preload.tsx
-│       ├── Sidebar.tsx
-│       ├── Skeleton.tsx
-│       ├── Spinner.tsx
-│       ├── Table.tsx
-│       ├── Tabs.tsx
-│       ├── Timeline.tsx
-│       └── Tooltip.tsx
-├── assets/             # Static resources
-│   ├── icons/          # SVG icons
-│   ├── logo.png
-│   ├── react.png
-│   └── loading.gif
-├── App.tsx            # Main component
-├── App.css           # Main styles
-├── main.tsx          # Entry point
-└── index.css         # Global styles
+maxi-web-components-test/
+├── public/
+│   └── index.html                 # Main HTML template
+├── src/
+│   ├── components/
+│   │   └── maxi/                 # Library components
+│   │       ├── Accordion.js
+│   │       ├── Autocomplete.js
+│   │       ├── Badge.js
+│   │       ├── Button.js
+│   │       ├── Calendar.js
+│   │       ├── Card.js
+│   │       ├── CascadeMenu.js
+│   │       ├── Checkbox.js
+│   │       ├── Chips.js
+│   │       ├── Dialog.js
+│   │       ├── Dropdown.js
+│   │       ├── InputField.js
+│   │       ├── InputNumber.js
+│   │       ├── InputRadio.js
+│   │       ├── InputSwitch.js
+│   │       ├── MultiSelect.js
+│   │       ├── Notification.js
+│   │       ├── Paginator.js
+│   │       ├── Preload.js
+│   │       ├── Sidebar.js
+│   │       ├── Skeleton.js
+│   │       ├── Spinner.js
+│   │       ├── Table.js
+│   │       ├── Tabs.js
+│   │       ├── Timeline.js
+│   │       └── Tooltip.js
+│   ├── assets/                   # Static resources
+│   │   ├── icons/               # SVG icons
+│   │   ├── angular.png
+│   │   ├── loading.gif
+│   │   └── logo.png
+│   ├── styles/                   # CSS files
+│   │   ├── App.css
+│   │   └── index.css
+│   ├── App.js                    # Main component
+│   └── index.js                  # Entry point
+├── dist/                         # Built files
+├── node_modules/                 # Dependencies
+├── package.json                  # Project configuration
+├── webpack.config.js            # Webpack configuration
+├── tsconfig.json                # TypeScript configuration
+└── README.md                    # This file
 ```
 
-## 🔧 Configuration
+## 🛠 Available Scripts
 
-### Vite
-The project is configured with Vite for fast development:
-- Port: 3000
-- Automatic browser opening
-- Source maps enabled
-- Dependency optimization
+| Script | Description |
+|--------|-------------|
+| `npm start` | Start development server |
+| `npm run dev` | Start development server and open browser |
+| `npm run build` | Build project for production |
+| `npm test` | Run tests |
+| `npm run lint` | Run code linter |
+| `npm run lint:fix` | Run linter and fix errors automatically |
 
-### TypeScript
-Strict TypeScript configuration:
-- Target: ES2020
-- JSX: react-jsx
-- Modules: ESNext
-- Strict linting enabled
+## 🔧 Technologies Used
 
-### ESLint
-Linting configuration to maintain code quality:
-- TypeScript rules
-- React Hooks rules
-- React Refresh rules
+### Main Dependencies
+- **React 17.0.2**: Main React library
+- **React DOM 17.0.2**: React DOM rendering
+- **maxi-react-components 4.0.10**: Maxi components library
 
-## 🌐 Component Usage
+### Development Dependencies
+- **Webpack 5.88.0**: Module bundler
+- **Babel**: JavaScript transpiler
+- **TypeScript 5.1.0**: TypeScript support
+- **ESLint**: Code linter
+- **Jest 29.5.0**: Testing framework
+- **CSS Loader**: CSS file loader
+- **HTML Webpack Plugin**: HTML plugin
 
-Each component is wrapped in a demo component that shows:
-- Different component variants
-- Usage examples
-- Functionality description
-- Interactivity to test features
+### Build Tools
+- **Webpack Dev Server**: Development server
+- **Babel Loader**: Babel loader for Webpack
+- **Style Loader**: Style loader
 
-### Usage Example
+## 🚀 Development
 
-```tsx
-import { MsButton } from "maxi-react-components";
+### Environment Setup
 
-function MyComponent() {
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start development server: `npm run dev`
+
+### Component Structure
+
+Each component follows a consistent structure:
+
+```javascript
+import { MaxiComponent } from "maxi-react-components";
+
+const MyComponent = () => {
+  // Component logic
   return (
-    <MsButton 
-      label="My Button" 
-      variant="primary" 
-      onClick={() => console.log('Click!')} 
-    />
+    <div>
+      <MaxiComponent 
+        // component props
+      />
+    </div>
   );
-}
+};
+
+export default MyComponent;
 ```
 
-## 📱 Responsive Design
+### Style Customization
 
-The application is designed to be fully responsive:
-- **Desktop**: Grid layout with multiple columns
-- **Tablet**: Adaptive layout with reduced columns
-- **Mobile**: Single column layout optimized for small screens
+Styles can be customized through:
+- Custom CSS variables
+- Specific CSS classes
+- Style props on components
 
-## 🎯 Demo Features
+## 📦 Build
 
-- **Intuitive Interface**: Clear navigation by component categories
-- **Practical Examples**: Each component shows real use cases
-- **Interactivity**: Components are fully functional
-- **Integrated Documentation**: Descriptions and examples in each section
-- **Modern Design**: Clean and professional UI
+### Development
+```bash
+npm run dev
+```
+
+### Production
+```bash
+npm run build
+```
+
+Production files are generated in the `dist/` folder with:
+- Minified JavaScript code
+- Optimized CSS
+- Processed assets
+- Content hash for cache busting
+
+## 📱 Compatibility
+
+- **Browsers**: Chrome, Firefox, Safari, Edge (last 2 versions)
+- **React**: 17.x and 18.x
+- **Node.js**: 14.x or higher
 
 ## 🤝 Contributing
 
-To contribute to the project:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/new-feature`)
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the [MIT](LICENSE) license.
-
-## 📞 Support
-
-For technical support or questions about the components, contact the maxi development team.
-
----
-
-**Developed with ❤️ for the React community**
+**Developed with ❤️ by the Maxi team**
