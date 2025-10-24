@@ -1,4 +1,4 @@
-# Maxi Web Components - React 17
+# Maxi Web Components - React 18
 
 <div align="center">
   <img src="./src/assets/logo.png" alt="Maxi Web Components Logo" width="300" />
