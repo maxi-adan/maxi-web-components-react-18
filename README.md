@@ -4,7 +4,7 @@
   <img src="./src/assets/logo.png" alt="Maxi Web Components Logo" width="300" />
 </div>
 
-A comprehensive library of modern web components built with React 17, designed to provide a consistent and efficient development experience.
+A comprehensive library of modern web components built with React 18, designed to provide a consistent and efficient development experience.
 
 ## 📋 Table of Contents
 
