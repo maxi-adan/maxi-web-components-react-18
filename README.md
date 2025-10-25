@@ -186,7 +186,7 @@ maxi-web-components-test/
 ### Main Dependencies
 - **React 17.0.2**: Main React library
 - **React DOM 17.0.2**: React DOM rendering
-- **maxi-react-components 4.0.10**: Maxi components library
+- **maxi-react-components 4.0.12**: Maxi components library
 
 ### Development Dependencies
 - **Webpack 5.88.0**: Module bundler
