@@ -87,7 +87,7 @@ The built files will be generated in the `dist/` folder.
 - **Dropdown**: Select dropdown with search functionality
 - **MultiSelect**: Multiple selection dropdown with tags
 - **Calendar**: Date picker with calendar interface
-- **InputOTP**: One-time password input with customizable length and validation
+- **InputOTP**: One-Time Password input with customizable length and validation
 
 ### Navigation Components
 - **Tabs**: Tabbed interface for content organization
