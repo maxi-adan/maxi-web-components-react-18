@@ -27,6 +27,7 @@ import Table from "./components/maxi/Table";
 import Timeline from "./components/maxi/Timeline";
 import Accordion from "./components/maxi/Accordion";
 import CascadeMenu from "./components/maxi/CascadeMenu";
+import InputOTP from "./components/maxi/InputOTP";
 
 function App() {
   return (
@@ -103,6 +104,11 @@ function App() {
           <h3>Calendar</h3>
           <p className="component-description">Date picker with calendar interface</p>
           <Calendar />
+        </div>
+        <div className="component-item">
+          <h3>Input OTP</h3>
+          <p className="component-description">Input OTP for One Time-Password verification</p>
+          <InputOTP />
         </div>
       </div>
     </section>

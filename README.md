@@ -87,6 +87,7 @@ The built files will be generated in the `dist/` folder.
 - **Dropdown**: Select dropdown with search functionality
 - **MultiSelect**: Multiple selection dropdown with tags
 - **Calendar**: Date picker with calendar interface
+- **InputOTP**: One-time password input with customizable length and validation
 
 ### Navigation Components
 - **Tabs**: Tabbed interface for content organization
@@ -139,6 +140,7 @@ maxi-web-components-test/
 │   │       ├── Dropdown.js
 │   │       ├── InputField.js
 │   │       ├── InputNumber.js
+│   │       ├── InputOTP.js
 │   │       ├── InputRadio.js
 │   │       ├── InputSwitch.js
 │   │       ├── MultiSelect.js
@@ -186,7 +188,7 @@ maxi-web-components-test/
 ### Main Dependencies
 - **React 17.0.2**: Main React library
 - **React DOM 17.0.2**: React DOM rendering
-- **maxi-react-components 4.0.12**: Maxi components library
+- **maxi-react-components 4.0.13**: Maxi components library
 
 ### Development Dependencies
 - **Webpack 5.88.0**: Module bundler
