@@ -107,7 +107,7 @@ function App() {
         </div>
         <div className="component-item">
           <h3>Input OTP</h3>
-          <p className="component-description">Input OTP for One Time-Password verification</p>
+          <p className="component-description">Input OTP for One-Time Password verification</p>
           <InputOTP />
         </div>
       </div>
