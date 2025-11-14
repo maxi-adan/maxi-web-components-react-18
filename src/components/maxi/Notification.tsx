@@ -57,10 +57,9 @@ const Notification = () => {
   };
 
   return (
-    <>
-      
+    <div style={{ display: "flex", gap: "10px" }}>
       <MsBadge
-      style={{ cursor: "pointer" }}
+        style={{ cursor: "pointer" }}
         value="Information"
         severity="info"
         onClick={() => handleClick("info")}
@@ -92,7 +91,7 @@ const Notification = () => {
         life={LIFETIME}
         detail={content.detail}
       />
-    </>
+    </div>
   );
 };
 

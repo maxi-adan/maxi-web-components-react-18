@@ -9,7 +9,12 @@ const Calendar = () => {
   };
   return (
     <div style={{ width: "100%" }}>
-      <MsCalendar showIcon value={date} onUpdate={handleUpdate} />
+      <MsCalendar
+        label="Calendar"
+        showIcon
+        value={date}
+        onUpdate={handleUpdate}
+      />
     </div>
   );
 };

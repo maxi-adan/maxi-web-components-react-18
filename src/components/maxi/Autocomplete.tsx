@@ -49,6 +49,7 @@ const Autocomplete = () => {
   return (
     <>
       <MsAutocomplete
+        label="Autocomplete"
         value={autoCompleteValue}
         placeholder="Type to search..."
         onCompleteMethod={(e: any) => handleCompleteMethod(e)}

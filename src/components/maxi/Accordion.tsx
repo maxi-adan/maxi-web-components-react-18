@@ -1,21 +1,20 @@
+/*eslint-disable no-console*/
 import { MsAccordion } from "maxi-react-components";
+import { Fragment } from "react";
 
 const Accordion = () => {
-     // Handler para cambio general
   const handleTabChange = (event: any) => {
     const { index, isOpen, activeIndexes } = event.detail;
     console.log(`Tab ${index} ${isOpen ? "opened" : "closed"}`);
     console.log("Tabs active:", activeIndexes);
   };
 
-  // Handler para apertura
   const handleTabOpen = (event: any) => {
     const { index, activeIndexes } = event.detail;
     console.log(`Tab ${index} opened!`);
     console.log("Tabs active:", activeIndexes);
   };
 
-  // Handler para cierre
   const handleTabClose = (event: any) => {
     const { index, activeIndexes } = event.detail;
     console.log(`Tab ${index} closed!`);
@@ -25,7 +24,8 @@ const Accordion = () => {
   const contentTabs = [
     {
       header: "Tab One",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       header: (
@@ -37,8 +37,14 @@ const Accordion = () => {
             src="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png"
             data-pc-section="image"
           />
-          <span className="accordion-custom-header-content-text">Amy Elsner</span>
-          <span className="accordion-custom-badge" data-pc-name="badge" data-pc-section="root">
+          <span className="accordion-custom-header-content-text">
+            Amy Elsner
+          </span>
+          <span
+            className="accordion-custom-badge"
+            data-pc-name="badge"
+            data-pc-section="root"
+          >
             3
           </span>
         </>
@@ -48,16 +54,17 @@ const Accordion = () => {
     },
     {
       header: "Tab Three",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
   ];
 
   const custommizedContent = (tab: any, index: any) => {
     return (
-      <>
+      <Fragment key={index}>
         <div slot={`header-${index}`}>{tab.header}</div>
         <div slot={`content-${index}`}>{tab.content}</div>
-      </>
+      </Fragment>
     );
   };
   return (
@@ -72,6 +79,6 @@ const Accordion = () => {
       {contentTabs.map((tab, index) => custommizedContent(tab, index))}
     </MsAccordion>
   );
-}
+};
 
 export default Accordion;

@@ -14,9 +14,9 @@ const MultiSelect = () => {
   ];
   return (
     <>
-      
       <MsMultiselect
-        onSelected={(e) => setSelectedItems(e.detail)}
+        label="Multi Select"
+        onSelected={(e: any) => setSelectedItems(e.detail)}
         options={options}
         placeholder="Select options"
         value={selectedItems}
