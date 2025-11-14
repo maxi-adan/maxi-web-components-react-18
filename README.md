@@ -93,6 +93,8 @@ The built files will be generated in the `dist/` folder.
 - **Tabs**: Tabbed interface for content organization
 - **Sidebar**: Collapsible navigation sidebar
 - **CascadeMenu**: Hierarchical dropdown menu with nested navigation options
+- **Menubar**: Horizontal navigation menu bar with dropdown menus and customizable items
+
 
 ### Action Components
 - **Button**: Interactive buttons with multiple variants and icons
@@ -138,6 +140,7 @@ maxi-web-components-test/
 │   │       ├── Chips.js
 │   │       ├── Dialog.js
 │   │       ├── Dropdown.js
+│   │       ├── Menubar.js
 │   │       ├── InputField.js
 │   │       ├── InputNumber.js
 │   │       ├── InputOTP.js
@@ -188,7 +191,7 @@ maxi-web-components-test/
 ### Main Dependencies
 - **React 17.0.2**: Main React library
 - **React DOM 17.0.2**: React DOM rendering
-- **maxi-react-components 4.0.13**: Maxi components library
+- **maxi-react-components 5.0.1**: Maxi components library
 
 ### Development Dependencies
 - **Webpack 5.88.0**: Module bundler

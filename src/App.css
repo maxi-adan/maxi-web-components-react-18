@@ -5,7 +5,6 @@
   background-color: #f5f5f5;
 }
 
-/* Estilos para el encabezado */
 .app-header {
   background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
   color: white;
@@ -108,7 +107,6 @@
   flex: 1;
 }
 
-/* Estilos para las secciones de componentes */
 .component-section {
   margin: 0 20px 40px 20px;
   background-color: white;
@@ -172,7 +170,6 @@
   font-style: italic;
 }
 
-/* Estilos especiales para la sección de tabla */
 .table-section {
   border-left-color: #28a745;
 }
@@ -186,7 +183,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Estilos especiales para la sección de paginator */
 .paginator-section {
   border-left-color: #ffc107;
 }
@@ -202,7 +198,6 @@
   align-items: center;
 }
 
-/* Estilos para la organización de botones */
 .button-showcase {
   display: flex;
   flex-direction: column;
@@ -231,14 +226,12 @@
   align-items: center;
 }
 
-/* Estilos para el skeleton */
 .skeleton-showcase {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-/* Estilos para el componente Card */
 .card-image-container {
   width: 100%;
   height: 200px;
@@ -253,44 +246,42 @@
   object-position: center;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .component-group {
     grid-template-columns: 1fr;
   }
-  
+
   .app {
     padding: 10px;
   }
-  
+
   .component-section {
     margin: 0 10px 40px 10px;
     padding: 16px;
   }
-  
+
   .header-content {
     flex-direction: column;
     gap: 20px;
     text-align: center;
   }
-  
+
   .logo-section {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .header-text h1 {
     font-size: 2rem;
   }
-  
+
   .app-header {
     padding: 20px 15px;
   }
 }
 
-/* Estilos para CascadeMenu dentro de Navigation Components */
 .cascade-menu-item {
-  grid-column: 1 / -1; /* Ocupa todo el ancho disponible */
+  grid-column: 1 / -1;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 12px;
   padding: 30px;
@@ -310,7 +301,6 @@
   margin-top: 15px;
 }
 
-/* Grid de 3 columnas para Display Components */
 .display-components-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -325,7 +315,6 @@
   height: 100%;
 }
 
-/* Responsive para Display Components */
 @media (max-width: 1024px) {
   .display-components-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -338,9 +327,9 @@
   }
 }
 
-/* Accordion ocupa el 100% del ancho */
 .accordion-full-width {
-  grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+  grid-column: 1 / -1;
+  gap: 20px;
   background: white;
   border-radius: 12px;
   padding: 30px;
@@ -348,8 +337,41 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
+.menubar-full-width {
+  grid-column: 1 / -1;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
 
-.accordion-custom-badge{
+.navigation-components-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.navigation-components-grid .component-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .navigation-components-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-components-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.accordion-custom-badge {
   margin-left: auto;
   background-color: #2196F3;
   color: white;
@@ -361,5 +383,6 @@
   font-weight: 600;
   width: 24px;
   height: 24px;
- padding: 0;
+  padding: 0;
+
 }

@@ -33,8 +33,8 @@ const Dropdown = () => {
   const [dropdownValue, setDropdownValue] = useState(null);
   return (
     <>
-    
       <MsDropdown
+        label="Dropdown"
         filter
         value={dropdownValue}
         placeholder="Select an option"
