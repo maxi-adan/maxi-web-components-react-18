@@ -29,6 +29,7 @@ import Accordion from "./components/maxi/Accordion";
 import CascadeMenu from "./components/maxi/CascadeMenu";
 import InputOTP from "./components/maxi/InputOTP";
 import Menubar from "./components/maxi/Menubar";
+import Carousel from "./components/maxi/Carousel";
 
 function App() {
   return (
@@ -239,6 +240,13 @@ function App() {
               Collapsible content sections for organized information display
             </p>
             <Accordion />
+          </div>
+          <div className="component-item carousel-full-width">
+            <h3>Carousel</h3>
+            <p className="component-description">
+              Interactive carousel for displaying multiple items with navigation
+            </p>
+            <Carousel />
           </div>
         </div>
       </section>

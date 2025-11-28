@@ -106,6 +106,7 @@ The built files will be generated in the `dist/` folder.
 - **Timeline**: Vertical timeline for events and progress
 - **Table**: Advanced table with sorting, filtering, and pagination
 - **Accordion**: Collapsible content sections for organized information display
+- **Carousel**: Carousel for displaying multiple items with navigation and responsive options
 
 ### Feedback Components
 - **Notification**: Toast notifications for user feedback
@@ -129,34 +130,35 @@ maxi-web-components-test/
 ├── src/
 │   ├── components/
 │   │   └── maxi/                 # Library components
-│   │       ├── Accordion.js
-│   │       ├── Autocomplete.js
-│   │       ├── Badge.js
-│   │       ├── Button.js
-│   │       ├── Calendar.js
-│   │       ├── Card.js
-│   │       ├── CascadeMenu.js
-│   │       ├── Checkbox.js
-│   │       ├── Chips.js
-│   │       ├── Dialog.js
-│   │       ├── Dropdown.js
-│   │       ├── Menubar.js
-│   │       ├── InputField.js
-│   │       ├── InputNumber.js
-│   │       ├── InputOTP.js
-│   │       ├── InputRadio.js
-│   │       ├── InputSwitch.js
-│   │       ├── MultiSelect.js
-│   │       ├── Notification.js
-│   │       ├── Paginator.js
-│   │       ├── Preload.js
-│   │       ├── Sidebar.js
-│   │       ├── Skeleton.js
-│   │       ├── Spinner.js
-│   │       ├── Table.js
-│   │       ├── Tabs.js
-│   │       ├── Timeline.js
-│   │       └── Tooltip.js
+│   │       ├── Accordion.tsx
+│   │       ├── Autocomplete.tsx
+│   │       ├── Badge.tsx
+│   │       ├── Button.tsx
+│   │       ├── Calendar.tsx
+│   │       ├── Card.tsx
+│   │       ├── Carousel.tsx
+│   │       ├── CascadeMenu.tsx
+│   │       ├── Checkbox.tsx
+│   │       ├── Chips.tsx
+│   │       ├── Dialog.tsx
+│   │       ├── Dropdown.tsx
+│   │       ├── Menubar.tsx
+│   │       ├── InputField.tsx
+│   │       ├── InputNumber.tsx
+│   │       ├── InputOTP.tsx
+│   │       ├── InputRadio.tsx
+│   │       ├── InputSwitch.tsx
+│   │       ├── MultiSelect.tsx
+│   │       ├── Notification.tsx
+│   │       ├── Paginator.tsx
+│   │       ├── Preload.tsx
+│   │       ├── Sidebar.tsx
+│   │       ├── Skeleton.tsx
+│   │       ├── Spinner.tsx
+│   │       ├── Table.tsx
+│   │       ├── Tabs.tsx
+│   │       ├── Timeline.tsx
+│   │       └── Tooltip.tsx
 │   ├── assets/                   # Static resources
 │   │   ├── icons/               # SVG icons
 │   │   ├── angular.png
@@ -191,7 +193,7 @@ maxi-web-components-test/
 ### Main Dependencies
 - **React 17.0.2**: Main React library
 - **React DOM 17.0.2**: React DOM rendering
-- **maxi-react-components 5.0.1**: Maxi components library
+- **maxi-react-components 5.0.2**: Maxi components library
 
 ### Development Dependencies
 - **Webpack 5.88.0**: Module bundler

@@ -24,12 +24,12 @@ const events = [
 ];
 
 const Timeline = () => {
-  const customizedContent = (item, index) => {
+  const customizedContent = (item: any, index: number) => {
     return (
       <div key={item.date} slot={`event-${index}`}>
         <p className="ms-timeline-content-date">{item.date}</p>
         <p className="ms-timeline-content-status">
-          <b>Order status:</b>
+          <b>Order status:&nbsp;</b>
 
           <MsBadge value={item.status} severity={item.severity} />
         </p>
