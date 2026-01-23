@@ -88,12 +88,15 @@ The built files will be generated in the `dist/` folder.
 - **MultiSelect**: Multiple selection dropdown with tags
 - **Calendar**: Date picker with calendar interface
 - **InputOTP**: One-Time Password input with customizable length and validation
+- **ControlNumber**: Numeric control input for managing numeric values
 
 ### Navigation Components
 - **Tabs**: Tabbed interface for content organization
 - **Sidebar**: Collapsible navigation sidebar
 - **CascadeMenu**: Hierarchical dropdown menu with nested navigation options
 - **Menubar**: Horizontal navigation menu bar with dropdown menus and customizable items
+- **Breadcrumb**: Navigation breadcrumb trail showing current page location
+- **Steps**: Step-by-step navigation component - Click on each step to navigate
 
 
 ### Action Components
@@ -103,6 +106,7 @@ The built files will be generated in the `dist/` folder.
 ### Display Components
 - **Card**: Content container with header, body, and footer
 - **Badge**: Small status indicators and labels
+- **Fieldset**: Grouped form fields with collapsible legend for organizing related inputs
 - **Timeline**: Vertical timeline for events and progress
 - **Table**: Advanced table with sorting, filtering, and pagination
 - **Accordion**: Collapsible content sections for organized information display
@@ -112,11 +116,13 @@ The built files will be generated in the `dist/` folder.
 - **Notification**: Toast notifications for user feedback
 - **Tooltip**: Hover tooltips for additional information
 - **Dialog**: Modal dialogs for forms and confirmations
+- **Message**: Contextual messages for displaying different types of feedback with multiple variants
 
 ### State Components
 - **Preload**: Loading overlay for page transitions
 - **Skeleton**: Placeholder content while loading
 - **Spinner**: Animated loading spinner
+- **ProgressBar**: Progress indicator for showing completion status or loading state
 
 ### Pagination
 - **Paginator**: Pagination controls for data navigation
@@ -133,6 +139,7 @@ maxi-web-components-test/
 │   │       ├── Accordion.tsx
 │   │       ├── Autocomplete.tsx
 │   │       ├── Badge.tsx
+│   │       ├── Breadcrumb.tsx
 │   │       ├── Button.tsx
 │   │       ├── Calendar.tsx
 │   │       ├── Card.tsx
@@ -140,21 +147,28 @@ maxi-web-components-test/
 │   │       ├── CascadeMenu.tsx
 │   │       ├── Checkbox.tsx
 │   │       ├── Chips.tsx
+│   │       ├── ControlNumber.tsx
 │   │       ├── Dialog.tsx
 │   │       ├── Dropdown.tsx
+│   │       ├── Fieldset.tsx
 │   │       ├── Menubar.tsx
 │   │       ├── InputField.tsx
 │   │       ├── InputNumber.tsx
 │   │       ├── InputOTP.tsx
 │   │       ├── InputRadio.tsx
 │   │       ├── InputSwitch.tsx
+│   │       ├── InputSwitch.tsx
+│   │       ├── Menubar.tsx
+│   │       ├── Message.tsx
 │   │       ├── MultiSelect.tsx
 │   │       ├── Notification.tsx
 │   │       ├── Paginator.tsx
 │   │       ├── Preload.tsx
+│   │       ├── ProgressBar.tsx
 │   │       ├── Sidebar.tsx
 │   │       ├── Skeleton.tsx
 │   │       ├── Spinner.tsx
+│   │       ├── Steps.tsx
 │   │       ├── Table.tsx
 │   │       ├── Tabs.tsx
 │   │       ├── Timeline.tsx
@@ -193,7 +207,7 @@ maxi-web-components-test/
 ### Main Dependencies
 - **React 17.0.2**: Main React library
 - **React DOM 17.0.2**: React DOM rendering
-- **maxi-react-components 5.0.2**: Maxi components library
+- **maxi-react-components 5.0.9**: Maxi components library
 
 ### Development Dependencies
 - **Webpack 5.88.0**: Module bundler
