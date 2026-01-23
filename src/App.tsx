@@ -30,6 +30,12 @@ import CascadeMenu from "./components/maxi/CascadeMenu";
 import InputOTP from "./components/maxi/InputOTP";
 import Menubar from "./components/maxi/Menubar";
 import Carousel from "./components/maxi/Carousel";
+import Breadcrumb from "./components/maxi/Breadcrumb";
+import ControlNumber from "./components/maxi/ControlNumber";
+import Fieldset from "./components/maxi/Fieldset";
+import Message from "./components/maxi/Message";
+import ProgressBar from "./components/maxi/ProgressBar";
+import Steps from "./components/maxi/Steps";
 
 function App() {
   return (
@@ -140,6 +146,13 @@ function App() {
             </p>
             <InputOTP />
           </div>
+          <div className="component-item">
+            <h3>Control Number</h3>
+            <p className="component-description">
+              Numeric control input for managing numeric values
+            </p>
+            <ControlNumber />
+          </div>
         </div>
       </section>
 
@@ -151,6 +164,13 @@ function App() {
             <h3>Menubar</h3>
             <p className="component-description">Horizontal navigation menu</p>
             <Menubar />
+          </div>
+          <div className="component-item breadcrumb-full-width">
+            <h3>Breadcrumb</h3>
+            <p className="component-description">
+              Navigation breadcrumb trail showing current page location
+            </p>
+            <Breadcrumb />
           </div>
           <div className="component-item">
             <h3>Cascade Menu</h3>
@@ -172,6 +192,13 @@ function App() {
               Collapsible navigation sidebar
             </p>
             <Sidebar />
+          </div>
+          <div className="component-item steps-full-width">
+            <h3>Steps</h3>
+            <p className="component-description">
+              Step-by-step navigation component - Click on each step to navigate
+            </p>
+            <Steps />
           </div>
         </div>
       </section>
@@ -228,6 +255,13 @@ function App() {
             <Badge />
           </div>
           <div className="component-item">
+            <h3>Fieldset</h3>
+            <p className="component-description">
+              Grouped form fields with collapsible legend for organizing related inputs
+            </p>
+            <Fieldset />
+          </div>
+          <div className="component-item">
             <h3>Timeline</h3>
             <p className="component-description">
               Vertical timeline for events and progress
@@ -265,7 +299,7 @@ function App() {
       {/* Sección de Componentes de Feedback */}
       <section className="component-section">
         <h2>Feedback Components</h2>
-        <div className="component-group">
+        <div className="component-group feedback-components-grid">
           <div className="component-item">
             <h3>Notification</h3>
             <p className="component-description">
@@ -287,6 +321,13 @@ function App() {
               Modal dialogs for forms and confirmations
             </p>
             <Dialog />
+          </div>
+          <div className="component-item message-full-width">
+            <h3>Message</h3>
+            <p className="component-description">
+              Contextual messages for displaying different types of feedback with multiple variants
+            </p>
+            <Message />
           </div>
         </div>
       </section>
@@ -313,6 +354,13 @@ function App() {
             <h3>Spinner</h3>
             <p className="component-description">Animated loading spinner</p>
             <Spinner />
+          </div>
+          <div className="component-item">
+            <h3>Progress Bar</h3>
+            <p className="component-description">
+              Progress indicator for showing completion status or loading state
+            </p>
+            <ProgressBar />
           </div>
         </div>
       </section>
