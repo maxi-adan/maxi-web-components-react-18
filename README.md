@@ -78,6 +78,7 @@ The built files will be generated in the `dist/` folder.
 ## 🧩 Available Components
 
 ### Input Components
+
 - **InputField**: Text input with validation and styling options
 - **InputNumber**: Numeric input with increment/decrement controls
 - **InputSwitch**: Toggle switch for boolean values
@@ -89,21 +90,28 @@ The built files will be generated in the `dist/` folder.
 - **Calendar**: Date picker with calendar interface
 - **InputOTP**: One-Time Password input with customizable length and validation
 - **ControlNumber**: Numeric control input for managing numeric values
+- **InputPassword**: Password input with strength meter and mask toggle
+- **Knob**: Circular dial control for selecting numeric values with drag and touch support
+- **TextEditor**: Rich text editor with formatting toolbar (bold, italic, underline, lists) and HTML output
 
 ### Navigation Components
+
 - **Tabs**: Tabbed interface for content organization
 - **Sidebar**: Collapsible navigation sidebar
 - **CascadeMenu**: Hierarchical dropdown menu with nested navigation options
 - **Menubar**: Horizontal navigation menu bar with dropdown menus and customizable items
 - **Breadcrumb**: Navigation breadcrumb trail showing current page location
 - **Steps**: Step-by-step navigation component - Click on each step to navigate
-
+- **Popover**: Contextual popup that appears on various triggers
 
 ### Action Components
+
 - **Button**: Interactive buttons with multiple variants and icons
 - **Chips**: Small tags for labeling and selections
+- **SelectButton**: Button-based selection group for single or multiple choices
 
 ### Display Components
+
 - **Card**: Content container with header, body, and footer
 - **Badge**: Small status indicators and labels
 - **Fieldset**: Grouped form fields with collapsible legend for organizing related inputs
@@ -111,20 +119,25 @@ The built files will be generated in the `dist/` folder.
 - **Table**: Advanced table with sorting, filtering, and pagination
 - **Accordion**: Collapsible content sections for organized information display
 - **Carousel**: Carousel for displaying multiple items with navigation and responsive options
+- **Image**: Image component with preview, zoom and rotate
+- **MeterGroup**: Segmented bar for visualizing categorized data
 
 ### Feedback Components
+
 - **Notification**: Toast notifications for user feedback
 - **Tooltip**: Hover tooltips for additional information
 - **Dialog**: Modal dialogs for forms and confirmations
 - **Message**: Contextual messages for displaying different types of feedback with multiple variants
 
 ### State Components
+
 - **Preload**: Loading overlay for page transitions
 - **Skeleton**: Placeholder content while loading
 - **Spinner**: Animated loading spinner
 - **ProgressBar**: Progress indicator for showing completion status or loading state
 
 ### Pagination
+
 - **Paginator**: Pagination controls for data navigation
 
 ## 📁 Project Structure
@@ -151,26 +164,31 @@ maxi-web-components-test/
 │   │       ├── Dialog.tsx
 │   │       ├── Dropdown.tsx
 │   │       ├── Fieldset.tsx
-│   │       ├── Menubar.tsx
+│   │       ├── Image.tsx
 │   │       ├── InputField.tsx
 │   │       ├── InputNumber.tsx
 │   │       ├── InputOTP.tsx
+│   │       ├── InputPassword.tsx
 │   │       ├── InputRadio.tsx
 │   │       ├── InputSwitch.tsx
-│   │       ├── InputSwitch.tsx
+│   │       ├── Knob.tsx
 │   │       ├── Menubar.tsx
 │   │       ├── Message.tsx
+│   │       ├── MeterGroup.tsx
 │   │       ├── MultiSelect.tsx
 │   │       ├── Notification.tsx
 │   │       ├── Paginator.tsx
+│   │       ├── Popover.tsx
 │   │       ├── Preload.tsx
 │   │       ├── ProgressBar.tsx
+│   │       ├── SelectButton.tsx
 │   │       ├── Sidebar.tsx
 │   │       ├── Skeleton.tsx
 │   │       ├── Spinner.tsx
 │   │       ├── Steps.tsx
 │   │       ├── Table.tsx
 │   │       ├── Tabs.tsx
+│   │       ├── TextEditor.tsx
 │   │       ├── Timeline.tsx
 │   │       └── Tooltip.tsx
 │   ├── assets/                   # Static resources
@@ -193,23 +211,25 @@ maxi-web-components-test/
 
 ## 🛠 Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `npm start` | Start development server |
-| `npm run dev` | Start development server and open browser |
-| `npm run build` | Build project for production |
-| `npm test` | Run tests |
-| `npm run lint` | Run code linter |
-| `npm run lint:fix` | Run linter and fix errors automatically |
+| Script             | Description                               |
+| ------------------ | ----------------------------------------- |
+| `npm start`        | Start development server                  |
+| `npm run dev`      | Start development server and open browser |
+| `npm run build`    | Build project for production              |
+| `npm test`         | Run tests                                 |
+| `npm run lint`     | Run code linter                           |
+| `npm run lint:fix` | Run linter and fix errors automatically   |
 
 ## 🔧 Technologies Used
 
 ### Main Dependencies
-- **React 17.0.2**: Main React library
-- **React DOM 17.0.2**: React DOM rendering
-- **maxi-react-components 5.0.9**: Maxi components library
+
+- **React 18.2.0**: Main React library
+- **React DOM 18.2.0**: React DOM rendering
+- **maxi-react-components 6.0.0**: Maxi components library
 
 ### Development Dependencies
+
 - **Webpack 5.88.0**: Module bundler
 - **Babel**: JavaScript transpiler
 - **TypeScript 5.1.0**: TypeScript support
@@ -219,6 +239,7 @@ maxi-web-components-test/
 - **HTML Webpack Plugin**: HTML plugin
 
 ### Build Tools
+
 - **Webpack Dev Server**: Development server
 - **Babel Loader**: Babel loader for Webpack
 - **Style Loader**: Style loader
@@ -242,8 +263,8 @@ const MyComponent = () => {
   // Component logic
   return (
     <div>
-      <MaxiComponent 
-        // component props
+      <MaxiComponent
+      // component props
       />
     </div>
   );
@@ -255,6 +276,7 @@ export default MyComponent;
 ### Style Customization
 
 Styles can be customized through:
+
 - Custom CSS variables
 - Specific CSS classes
 - Style props on components
@@ -262,16 +284,19 @@ Styles can be customized through:
 ## 📦 Build
 
 ### Development
+
 ```bash
 npm run dev
 ```
 
 ### Production
+
 ```bash
 npm run build
 ```
 
 Production files are generated in the `dist/` folder with:
+
 - Minified JavaScript code
 - Optimized CSS
 - Processed assets
@@ -290,6 +315,5 @@ Production files are generated in the `dist/` folder with:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
 
 **Developed with ❤️ by the Maxi team**

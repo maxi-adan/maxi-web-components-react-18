@@ -4,10 +4,13 @@ import reactLogo from "./assets/react.png";
 import Badge from "./components/maxi/Badge";
 import Button from "./components/maxi/Button";
 import Checkbox from "./components/maxi/Checkbox";
+import Image from "./components/maxi/Image";
 import InputField from "./components/maxi/InputField";
 import InputNumber from "./components/maxi/InputNumber";
 import InputSwitch from "./components/maxi/InputSwitch";
+import MeterGroup from "./components/maxi/MeterGroup";
 import Notification from "./components/maxi/Notification";
+import Popover from "./components/maxi/Popover";
 import Preload from "./components/maxi/Preload";
 import InputRadio from "./components/maxi/InputRadio";
 import Sidebar from "./components/maxi/Sidebar";
@@ -36,6 +39,10 @@ import Fieldset from "./components/maxi/Fieldset";
 import Message from "./components/maxi/Message";
 import ProgressBar from "./components/maxi/ProgressBar";
 import Steps from "./components/maxi/Steps";
+import TextEditor from "./components/maxi/TextEditor";
+import Knob from "./components/maxi/Knob";
+import InputPassword from "./components/maxi/InputPassword";
+import SelectButton from "./components/maxi/SelectButton";
 
 function App() {
   return (
@@ -91,32 +98,18 @@ function App() {
             <InputNumber />
           </div>
           <div className="component-item">
-            <h3>Input Switch</h3>
+            <h3>Input Password</h3>
             <p className="component-description">
-              Toggle switch for boolean values
+              Password input with strength meter and mask toggle
             </p>
-            <InputSwitch />
+            <InputPassword />
           </div>
           <div className="component-item">
-            <h3>Input Radio</h3>
+            <h3>Control Number</h3>
             <p className="component-description">
-              Radio button for single selection
+              Numeric control input for managing numeric values
             </p>
-            <InputRadio />
-          </div>
-          <div className="component-item">
-            <h3>Checkbox</h3>
-            <p className="component-description">
-              Checkbox for multiple selections
-            </p>
-            <Checkbox />
-          </div>
-          <div className="component-item">
-            <h3>Autocomplete</h3>
-            <p className="component-description">
-              Input with suggestions and filtering
-            </p>
-            <Autocomplete />
+            <ControlNumber />
           </div>
           <div className="component-item">
             <h3>Dropdown</h3>
@@ -133,11 +126,11 @@ function App() {
             <MultiSelect />
           </div>
           <div className="component-item">
-            <h3>Calendar</h3>
+            <h3>Autocomplete</h3>
             <p className="component-description">
-              Date picker with calendar interface
+              Input with suggestions and filtering
             </p>
-            <Calendar />
+            <Autocomplete />
           </div>
           <div className="component-item">
             <h3>Input OTP</h3>
@@ -147,11 +140,48 @@ function App() {
             <InputOTP />
           </div>
           <div className="component-item">
-            <h3>Control Number</h3>
+            <h3>Input Switch</h3>
             <p className="component-description">
-              Numeric control input for managing numeric values
+              Toggle switch for boolean values
             </p>
-            <ControlNumber />
+            <InputSwitch />
+          </div>
+          <div className="component-item">
+            <h3>Checkbox</h3>
+            <p className="component-description">
+              Checkbox for multiple selections
+            </p>
+            <Checkbox />
+          </div>
+          <div className="component-item">
+            <h3>Input Radio</h3>
+            <p className="component-description">
+              Radio button for single selection
+            </p>
+            <InputRadio />
+          </div>
+          <div className="component-item">
+            <h3>Knob</h3>
+            <p className="component-description">
+              Circular dial control for selecting numeric values with drag and
+              touch support
+            </p>
+            <Knob />
+          </div>
+          <div className="component-item">
+            <h3>Calendar</h3>
+            <p className="component-description">
+              Date picker with calendar interface
+            </p>
+            <Calendar />
+          </div>
+          <div className="component-item text-editor-full-width">
+            <h3>Text Editor</h3>
+            <p className="component-description">
+              Rich text editor with formatting toolbar (bold, italic, underline,
+              lists) and HTML output
+            </p>
+            <TextEditor />
           </div>
         </div>
       </section>
@@ -200,6 +230,13 @@ function App() {
             </p>
             <Steps />
           </div>
+          <div className="component-item popover-full-width">
+            <h3>Popover</h3>
+            <p className="component-description">
+              Contextual popup that appears on various triggers
+            </p>
+            <Popover />
+          </div>
         </div>
       </section>
 
@@ -233,6 +270,13 @@ function App() {
             </p>
             <Chips />
           </div>
+          <div className="component-item">
+            <h3>Select Button</h3>
+            <p className="component-description">
+              Button-based selection group for single or multiple choices
+            </p>
+            <SelectButton />
+          </div>
         </div>
       </section>
 
@@ -257,16 +301,31 @@ function App() {
           <div className="component-item">
             <h3>Fieldset</h3>
             <p className="component-description">
-              Grouped form fields with collapsible legend for organizing related inputs
+              Grouped form fields with collapsible legend for organizing related
+              inputs
             </p>
             <Fieldset />
           </div>
-          <div className="component-item">
+          <div className="component-item timeline-full-width">
             <h3>Timeline</h3>
             <p className="component-description">
               Vertical timeline for events and progress
             </p>
             <Timeline />
+          </div>
+          <div className="component-item image-full-width">
+            <h3>Image</h3>
+            <p className="component-description">
+              Image component with preview, zoom and rotate
+            </p>
+            <Image />
+          </div>
+          <div className="component-item meter-group-full-width">
+            <h3>Meter Group</h3>
+            <p className="component-description">
+              Segmented bar for visualizing categorized data
+            </p>
+            <MeterGroup />
           </div>
           <div className="component-item accordion-full-width">
             <h3>Accordion</h3>
@@ -325,7 +384,8 @@ function App() {
           <div className="component-item message-full-width">
             <h3>Message</h3>
             <p className="component-description">
-              Contextual messages for displaying different types of feedback with multiple variants
+              Contextual messages for displaying different types of feedback
+              with multiple variants
             </p>
             <Message />
           </div>
